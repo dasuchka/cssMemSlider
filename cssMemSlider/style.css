@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+a{
+    width: 10px;
+    height: 10px;
+    padding: 7px;
+    border-radius: 50%;
+    border-width: medium;
+    border-style: solid;
+    border-color: blue;
+    background-color: blue;
+    cursor: pointer;
+}
+
+a:hover {
+    border-width: medium;
+    border-style: solid;
+    border-color: blue;
+    background-color: white;
+    
+}
+
+a:active {
+    border-width: medium;
+    border-style: solid;
+    border-color: blue;
+    background-color: white;
+    
+}
+
+.container {
+    width: 70vw;
+    height: 90vh;
+    padding-top: 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.mem {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mem_pic {
+    width: 70vw;
+    height: 70vh;
+}
+
+.text {
+    margin: 20px 0px;
+    width: 50vw;
+    font-size: 5vh;
+    text-align: start;
+    align-self: flex-start;
+}
+
+
+.container_buttons_slider{
+    margin: 0 auto;
+    padding-top: 40px;
+    position: absolute;
+    left: 70vw;
+    bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
