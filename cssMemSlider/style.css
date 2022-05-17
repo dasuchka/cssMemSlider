@@ -1,6 +1,12 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     height: 100vh;
+}
+
+form{
+    width: 20px;
+    height: 20px;
+    background-color: yellowgreen;
 }
 
 a{
@@ -28,15 +34,17 @@ a:active {
     border-style: solid;
     border-color: blue;
     background-color: white;
-    
 }
 
+
 .container {
+    height: 92%;
     width: 70vw;
-    height: 90vh;
-    padding-top: 20px;
     margin: 0 auto;
+    padding: 30px 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .slides{
@@ -61,23 +69,65 @@ a:active {
     height: 70vh;
 }
 
+.container_text_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_container {
+    width: 50vw;
+    overflow: hidden;
+}
+
 .text {
     margin: 20px 0px;
-    width: 50vw;
-    font-size: 5vh;
+    min-width: 50vw;
+    font-size: 3.5vh;
     text-align: start;
     align-self: flex-start;
 }
 
+.phrases {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
 
 .container_buttons_slider{
-    margin: 0 auto;
-    padding-top: 40px;
-    position: absolute;
-    left: 70vw;
-    bottom: 10vh;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .container{
+        justify-content: space-between;
+    }
+
+    .container_text_buttons {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .slides{
+        height: auto;
+    }
+
+    .text_container{
+        width: 70vw;
+    }
+
+    .text {
+        min-width: 70vw;
+        text-align: center;
+    }
 }
 
